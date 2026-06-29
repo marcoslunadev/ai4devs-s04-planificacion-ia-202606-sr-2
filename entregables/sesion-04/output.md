@@ -36,6 +36,7 @@ Como usuario autenticado, quiero cerrar sesión, para terminar mi sesión activa
 
 - Given que el usuario está autenticado, When ejecuta la acción de cierre de sesión, Then el token de acceso queda invalidado **(asumido)** y el usuario es redirigido a la pantalla de inicio de sesión.
 - Given que el usuario cierra sesión, When intenta acceder a una ruta protegida directamente, Then el sistema le redirige al inicio de sesión sin mostrar datos de la cuenta.
+- Given que el token de acceso del usuario ha expirado **(asumido)**, When el usuario intenta realizar cualquier acción autenticada, Then el sistema invalida la sesión y redirige al usuario a la pantalla de inicio de sesión.
 
 ---
 
